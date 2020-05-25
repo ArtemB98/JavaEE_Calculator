@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>res_Servlet</servlet-name>
+        <servlet-class>web_classes.res_Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>xmlserv</servlet-name>
+        <servlet-class>web_classes.xmlserv</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>res_Servlet</servlet-name>
+        <url-pattern>/result.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>xmlserv</servlet-name>
+        <url-pattern>/result.xml</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
